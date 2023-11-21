@@ -1,0 +1,27 @@
+.select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+  }
+  
+  .select__title {
+    color: #fff;
+    font-family: Antonio;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    animation: moveUpDown 2s infinite ease-in-out; /* Agrega la animación aquí */
+  }
+  
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-25px); /* Ajusta la distancia del movimiento hacia arriba */
+    }
+  }
+  
