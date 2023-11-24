@@ -1,25 +1,39 @@
-import { useState } from "react";
+import {  useState } from "react";
 import data from "../../data.json";
 import "../style/planet.css";
-import { useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 
 const Planets = () => {
   const { planetName } = useParams();
-
+  
   const planet = data.find((planet) => planet.name === planetName);
 
   const [options, setOptions] = useState("overview");
-  const [images, setImages] = useState("planet")
+  const [images, setImages] = useState("planet");
 
   return (
     <div className="planet__container">
       <section className="planet">
-        <img
-          className="planet__img"
-          src={planet.images?.[images]}
-          alt={planet?.name.toUpperCase()}
-        />
+        <div className="planet__container--img">
+         {/* <img  className={
+              images === "geology"
+                ? `planet__img-geology-${planetName.toLocaleLowerCase()}`
+                : ""  
+            }
+            src={planet.images?.[images === "geology" ? "geology" : ""]}/> */}
+          <img
+            // className={
+            //   images === "geology"
+            //     ? `planet__img-geology-${planetName.toLocaleLowerCase()}`
+            //     : ""
+            // }
+            src={planet.images?.[images === "geology" ? "planet" : images]}
+            alt={planet?.name.toUpperCase()}
+          />
+        </div>
+
         <article className="planet__info">
+          <div>
           <h1 className="planet__info-title">{planet?.name.toUpperCase()}</h1>
           <p className="planet__info-content">{planet?.[options].content}</p>
           <div className="planet__links">
@@ -37,13 +51,14 @@ const Planets = () => {
               />
             </a>
           </div>
+          </div>
           <div className="planet__buttons-container">
             <button
               onClick={() => {
                 setOptions("overview");
-                setImages("planet")
+                setImages("planet");
               }}
-              className="planet__button earth__button--overview"
+              className={`${planetName.toLocaleLowerCase()}__button--overview  planet__button`}
             >
               <span className="planet__button-number">01 </span>
               OVERVIEW
@@ -51,9 +66,9 @@ const Planets = () => {
             <button
               onClick={() => {
                 setOptions("structure");
-                setImages("internal")
+                setImages("internal");
               }}
-              className="planet__button earth__button--internal-structure"
+              className={`${planetName.toLocaleLowerCase()}__button--overview  planet__button`}
             >
               <span className="planet__button-number">02 </span>
               INTERNAL STRUCTURE
@@ -61,9 +76,9 @@ const Planets = () => {
             <button
               onClick={() => {
                 setOptions("geology");
-                setImages("geology")
+                setImages("geology");
               }}
-              className="planet__button earth__button--surface-geology"
+              className={`${planetName.toLocaleLowerCase()}__button--overview  planet__button`}
             >
               <span className="planet__button-number">03 </span>
               SURFACE GEOLOGY

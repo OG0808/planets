@@ -5,15 +5,111 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .planet {
   display: flex;
-  gap: 195px;
+  
   align-items: center;
+  justify-content: space-between;
   margin-top: 137px;
   margin-bottom: 87px;
+  max-width: 1110px;
+  width: 100%;
+
+}
+
+.planet__container--img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+
+
+.planet__img-geology-earth {
+  width: 163px;
+  flex-shrink: 0;
+  bottom: -45%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-image: url("../assets/geology-earth.png");
+}
+.planet__img-geology-jupiter {
+  width: 163px;
+  flex-shrink: 0;
+  bottom: -35%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-image: url("../assets/geology-jupiter.png");
+}
+.planet__img-geology-mars {
+  width: 163px;
+  flex-shrink: 0;
+  bottom: -40%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-image: url("../assets/geology-mars.png");
+}
+.planet__img-geology-mercury {
+  width: 163px;
+  flex-shrink: 0;
+  bottom: -40%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-image: url("../assets/geology-mercury.png");
+}
+.planet__img-geology-neptune {
+  width: 163px;
+  flex-shrink: 0;
+  bottom: -10%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-image: url("../assets/geology-neptune.png");
+}
+.planet__img-geology-saturn {
+  width: 163px;
+  flex-shrink: 0;
+  bottom: -45%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-image: url("../assets/geology-saturn.png");
+}
+.planet__img-geology-uranus {
+  background-image: url("../assets/geology-uranus.png");
+  width: 163px;
+  flex-shrink: 0;
+  bottom: -40%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  
+}
+.planet__img-geology-venus {
+  width: 163px;
+  flex-shrink: 0;
+  bottom: -45%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  
+  background-image: url("../assets/geology-venus.png");
 }
 
 .planet__info-title {
@@ -32,12 +128,13 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px; /* 178.571% */
+  line-height: 25px;
+  max-width: 350px; /* 178.571% */
   width: 350px;
   margin-bottom: 24px;
 }
 
-.planet__links{
+.planet__links {
   margin-bottom: 39px;
 }
 .planet__info-source {
@@ -47,7 +144,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 25px; /* 178.571% */
-
 }
 
 .planet__source {
@@ -65,17 +161,18 @@
   gap: 16px;
 }
 
-.planet__button {
-  width: 350px;
+
+.earth__button--internal-structure,
+.earth__button--surface-geology,
+.earth__button--overview,
+.planet__button{
+  max-width: 350px;
+  width: 100%;
   height: 48px;
   flex-shrink: 0;
   background-color: transparent;
   cursor: pointer;
   border: 1px solid hwb(0 100% 0% / 0.2);
-}
-.earth__button--internal-structure,
-.earth__button--surface-geology,
-.earth__button--overview {
   color: #fff;
   font-family: Spartan;
   font-size: 12px;
@@ -85,13 +182,58 @@
   letter-spacing: 2.571px;
   text-transform: uppercase;
   transition: 0.2s;
+  
 }
 
 .earth__button--surface-geology:hover,
 .earth__button--overview:hover,
-.earth__button--internal-structure:hover {
+.earth__button--internal-structure:hover,
+.planet__button:hover {
   transition: 0.2s;
   background: #38384f;
+}
+.mercury__button--surface-geology:focus,
+.mercury__button--internal-structure:focus,
+.mercury__button--overview:focus {
+  transition: 0.2s;
+  background: #1EC1A2;
+}
+
+.venus__button--surface-geology:focus,
+.venus__button--internal-structure:focus,
+.venus__button--overview:focus {
+  transition: 0.2s;
+  background: #EDA249;
+}
+.mars__button--surface-geology:focus,
+.mars__button--internal-structure:focus,
+.mars__button--overview:focus {
+  transition: 0.2s;
+  background: #D14C32;
+}
+.jupiter__button--surface-geology:focus,
+.jupiter__button--internal-structure:focus,
+.jupiter__button--overview:focus {
+  transition: 0.2s;
+  background: #D83A34;
+}
+.saturn__button--surface-geology:focus,
+.saturn__button--internal-structure:focus,
+.saturn__button--overview:focus {
+  transition: 0.2s;
+  background: #CD5120;
+}
+.uranus__button--surface-geology:focus,
+.uranus__button--internal-structure:focus,
+.uranus__button--overview:focus {
+  transition: 0.2s;
+  background: #1EC1A2;
+}
+.neptune__button--surface-geology:focus,
+.neptune__button--internal-structure:focus,
+.neptune__button--overview:focus {
+  transition: 0.2s;
+  background: #2D68F0;
 }
 .earth__button--surface-geology:focus,
 .earth__button--internal-structure:focus,
@@ -99,6 +241,8 @@
   transition: 0.2s;
   background: #6d2ed5;
 }
+
+
 
 .planet__button-number {
   opacity: 0.5;
@@ -113,8 +257,10 @@
   color: white;
 }
 
-.planet__data{
+.planet__data {
   margin-bottom: 2rem;
+  max-width: 1110px;
+  width: 100%;
 }
 
 .planet__data-list {
@@ -124,6 +270,7 @@
   width: 100%;
   justify-content: space-around;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .planet__data-item-wrapper {
@@ -160,3 +307,57 @@
   text-transform: uppercase;
   opacity: 0.5;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1045px) {
+  .planet{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .planet__info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 69px;
+    margin: 0 auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 540px) {
+  .planet__container--img > img {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .planet__container{
+    padding: 1rem;
+  }
+  .planet{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .planet__info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 69px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+
+/* Menu Hamburguesa  */
+
+

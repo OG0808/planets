@@ -2,7 +2,7 @@
   max-width: 1440px;
   width: 100%;
   height: 85px;
-  border-bottom: 1px rgba(255, 255, 255, 0.2)  solid;
+  border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
   color: white;
 }
 
@@ -14,7 +14,7 @@
   padding: 0rem 2rem 0rem 2rem;
 }
 
-.nabvar__title>a {
+.nabvar__title > a {
   color: #fff;
   font-family: Antonio;
   font-size: 28px;
@@ -30,6 +30,7 @@
   display: flex;
   gap: 33px;
   text-decoration: none;
+  flex-wrap: wrap;
 }
 
 .navbar__planets {
@@ -46,8 +47,160 @@
   transition: 0.2s;
 }
 
-.navbar__planets:hover{
+.navbar__planets:hover {
   opacity: 1;
   transition: 0.2s;
 }
 
+.navlist__circle {
+  display: none;
+}
+.chevron{
+  display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 860px) {
+  .nabvar__icon--hamburguesa {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 860px) {
+  .nabvar {
+    display: flex;
+    
+  }
+  .nabvar__title {
+    margin-top: 32px;
+    margin-bottom: 39px;
+  }
+
+  .nabvarlist__planets {
+    margin-bottom: 27px;
+  }
+  .container__nabvar {
+    max-width: 1440px;
+    width: 100%;
+    height: 85px;
+    border: 1px rgba(255, 255, 255, 0.2) solid;
+    color: white;
+  }
+
+  .nav__menu--open {
+    /* display: none; */
+    position: absolute;
+    top: 84px;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+  }
+
+  .nav__menu--closed {
+    transition: 0.3s;
+    position: absolute;
+    top: 84px;
+    right: -100%;
+    bottom: 0;
+  }
+
+  .nabvarlist__planets {
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #070724;
+    width: 375px;
+   
+  }
+
+  .chevron {
+    width: 8px;
+    height: 8px;
+    color: #fff;
+    opacity: 0.4;
+  }
+
+  .nabvarlist__planets > li {
+    display: flex;
+    gap: 15px;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0rem 1rem 0rem;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1)
+  }
+  .nabvarlist__planets > li> div{
+    display: flex;
+    gap: 15px;
+  }
+
+  .navlist__circle--mercury {
+    width: 20px;
+    height: 20px;
+    background-color: #def4fc;
+    border-radius: 50%;
+    display: flex;
+  }
+
+  .navlist__circle--venus {
+    width: 20px;
+    height: 20px;
+    background-color: #f7cc7f;
+    border-radius: 50%;
+  }
+
+  .navlist__circle--earth {
+    width: 20px;
+    height: 20px;
+    background-color: #545bfe;
+    border-radius: 50%;
+  }
+
+  .navlist__circle--mars {
+    width: 20px;
+    height: 20px;
+    background-color: #ff6a45;
+    border-radius: 50%;
+  }
+
+  .navlist__circle--jupiter {
+    width: 20px;
+    height: 20px;
+    background-color: #ecad7a;
+    border-radius: 50%;
+  }
+
+  .navlist__circle--saturn {
+    width: 20px;
+    height: 20px;
+    background-color: #fccb6b;
+    border-radius: 50%;
+  }
+
+  .navlist__circle--uranus {
+    width: 20px;
+    height: 20px;
+    background-color: #65f0d5;
+    border-radius: 50%;
+  }
+
+  .navlist__circle--neptune {
+    width: 20px;
+    height: 20px;
+    background-color: #497efa;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
