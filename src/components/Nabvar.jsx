@@ -18,7 +18,7 @@ const Nabvar = () => {
         <img
           onClick={() => hanldeMenu()}
           className="nabvar__icon--hamburguesa"
-          src="./src/assets/icon-hamburger.svg"
+          src="./public/icon-hamburger.svg"
           alt=""
         />
         <nav className={menu ? "nav__menu--open" : "nav__menu--closed"}>
@@ -32,7 +32,7 @@ const Nabvar = () => {
               </div>
               <img
                 className="chevron"
-                src="./src/assets/icon-chevron.svg"
+                src="./public/icon-chevron.svg"
                 alt=""
               />
             </li>
@@ -46,7 +46,7 @@ const Nabvar = () => {
               </div>
               <img
                 className="chevron"
-                src="./src/assets/icon-chevron.svg"
+                src="./public/icon-chevron.svg"
                 alt=""
               />
             </li>
@@ -60,7 +60,7 @@ const Nabvar = () => {
               </div>
               <img
                 className="chevron"
-                src="./src/assets/icon-chevron.svg"
+                src="./public/icon-chevron.svg"
                 alt=""
               />
             </li>
@@ -74,7 +74,7 @@ const Nabvar = () => {
               </div>
               <img
                 className="chevron"
-                src="./src/assets/icon-chevron.svg"
+                src="./public/icon-chevron.svg"
                 alt=""
               />
             </li>
@@ -89,7 +89,7 @@ const Nabvar = () => {
               </div>
               <img
                 className="chevron"
-                src="./src/assets/icon-chevron.svg"
+                src="./public/icon-chevron.svg"
                 alt=""
               />
             </li>
@@ -103,7 +103,7 @@ const Nabvar = () => {
               </div>
               <img
                 className="chevron"
-                src="./src/assets/icon-chevron.svg"
+                src="./public/icon-chevron.svg"
                 alt=""
               />
             </li>
@@ -118,7 +118,7 @@ const Nabvar = () => {
               </div>
               <img
                 className="chevron"
-                src="./src/assets/icon-chevron.svg"
+                src="./public/icon-chevron.svg"
                 alt=""
               />
             </li>
@@ -132,7 +132,7 @@ const Nabvar = () => {
               </div>
               <img
                 className="chevron"
-                src="./src/assets/icon-chevron.svg"
+                src="./public/icon-chevron.svg"
                 alt=""
               />
             </li>
