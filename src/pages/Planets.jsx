@@ -33,7 +33,7 @@ const Planets = () => {
         </div>
 
         <article className="planet__info">
-          <div>jyuyuyfuyfuyhuuguufufufucktydkytdkytd
+          <div>
           <h1 className="planet__info-title">{planet?.name.toUpperCase()}</h1>
           <p className="planet__info-content">{planet?.[options].content}</p>
           <div className="planet__links">
