@@ -18,7 +18,7 @@ const Nabvar = () => {
         <img
           onClick={() => hanldeMenu()}
           className="nabvar__icon--hamburguesa"
-          src="./public/icon-hamburger.svg"
+          src="./icon-hamburger.svg"
           alt=""
         />
         <nav className={menu ? "nav__menu--open" : "nav__menu--closed"}>

@@ -46,7 +46,7 @@ const Planets = () => {
               Wikipedia
               <img
                 className="planet__info-icon"
-                src="./src/assets/icon-source.svg"
+                src="./icon-source.svg"
                 alt=""
               />
             </a>
