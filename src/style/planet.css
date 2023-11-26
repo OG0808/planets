@@ -35,7 +35,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: url("./geology-earth.png");
+  background-image: url("../../public/geology-earth.png");
 }
 .planet__img-geology-jupiter {
   width: 163px;
@@ -45,7 +45,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: url("./geology-jupiter.png");
+  background-image: url("../../public/geology-jupiter.png");
 }
 .planet__img-geology-mars {
   width: 163px;
@@ -55,7 +55,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: url("./geology-mars.png");
+  background-image: url("../../public/geology-mars.png");
 }
 .planet__img-geology-mercury {
   width: 163px;
@@ -65,7 +65,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: url("./geology-mercury.png");
+  background-image: url("../../public/geology-mercury.png");
 }
 .planet__img-geology-neptune {
   width: 163px;
@@ -75,7 +75,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: url("./geology-neptune.png");
+  background-image: url("../../public/geology-neptune.png");
 }
 .planet__img-geology-saturn {
   width: 163px;
@@ -86,10 +86,10 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: url("./geology-saturn.png");
+  background-image: url("../../public/geology-saturn.png");
 }
 .planet__img-geology-uranus {
-  background-image: url("./geology-uranus.png");
+  background-image: url("../../public/geology-uranus.png");
   width: 163px;
   height: 199px;
   flex-shrink: 0;
@@ -109,7 +109,7 @@
   background-position: bottom;
   background-size: cover;
 
-  background-image: url("./geology-venus.png");
+  background-image: url("../../public/geology-venus.png");
 }
 
 .planet__info-title {
