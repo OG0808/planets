@@ -1,4 +1,4 @@
- .container__nabvar {
+.container-fluid{
   max-width: 1440px;
   width: 100%;
   height: 85px;
@@ -65,17 +65,19 @@
 /* Extra small devices (phones, 600px and down) */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 860px) {
+@media only screen and (min-width: 860px) {
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 860px) {
-
+  
   .nabvar__icon--hamburguesa {
     display: block;
+ 
   }
 
+  
   .nabvar {
     display: flex;
     
@@ -96,21 +98,29 @@
     color: white;
   }
 
+  .chevron{
+    display: block;
+  }
+
   .nav__menu--open {
+    /* display: none; */
     position: absolute;
     top: 84px;
     right: 0;
     bottom: 0;
     transition: 0.3s;
+   min-height: 100%;
+   z-index: 3;
   }
 
   .nav__menu--closed {
     transition: 0.3s;
     position: absolute;
     top: 84px;
-    right: -500px;
-    bottom: 0px;
-    
+    right: 0;
+    bottom: 0;
+    display: none;
+   
   }
 
   .nabvarlist__planets {
@@ -200,7 +210,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -209,205 +219,4 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-} */
-
-
-.container__nabvar {
-  max-width: 1440px;
-  width: 100%;
-  height: 85px;
-  border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
-  color: white;
-}
-
-.nabvar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 85px;
-  padding: 0 2rem;
-}
-
-.nabvar__title > a {
-  color: #fff;
-  font-family: Antonio;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -1.05px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.nabvarlist__planets {
-  list-style: none;
-  display: flex;
-  gap: 33px;
-  text-decoration: none;
-  flex-wrap: wrap;
-}
-
-.navbar__planets {
-  color: #fff;
-  font-family: Spartan;
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 25px; /* 227.273% */
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  opacity: 0.75;
-  transition: 0.2s;
-}
-
-.navbar__planets:hover {
-  opacity: 1;
-  transition: 0.2s;
-}
-
-.navlist__circle {
-  display: none;
-}
-
-.chevron {
-  display: none;
-}
-
-.nabvar__icon--hamburguesa {
-  display: none;
-}
-
-@media only screen and (max-width: 860px) {
-  .nabvar__icon--hamburguesa {
-    display: block;
-  }
-
-  .nabvar {
-    display: flex;
-  
-  }
-
-  .nabvar__title {
-    margin-top: 32px;
-    margin-bottom: 39px;
-  }
-
-  .nabvarlist__planets {
-    margin-bottom: 27px;
-  }
-
-  .container__nabvar {
-    max-width: 1440px;
-    width: 100%;
-    height: 85px;
-    border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
-    color: white;
-  }
-
-  .nav__menu--open {
-    position: absolute;
-    top: 84px;
-    right: 0;
-    bottom: 0;
-    transition: 0.3s;
-  }
-
-  .nav__menu--closed {
-    display: none;
-    transition: 0.3s;
-    position: absolute;
-    top: 84px;
-    right: 0px; /* Ajusta este valor según tus necesidades */
-  }
-
-  .nabvarlist__planets {
-    flex-direction: column;
-    padding: 2rem;
-    background-color: #070724;
-    width: 375px;
-  }
-  .chevron {
-    display: block;
-  }
-
-  .chevron {
-    width: 8px;
-    height: 8px;
-    color: #fff;
-    opacity: 0.4;
-  }
-
-  .nabvarlist__planets > li {
-    display: flex;
-    gap: 15px;
-    color: #fff;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0rem 0rem 1rem 0rem;
-    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
-  }
-
-  .nabvarlist__planets > li > div {
-    display: flex;
-    gap: 15px;
-  }
-
-  .navlist__circle--mercury,
-  .navlist__circle--venus,
-  .navlist__circle--earth,
-  .navlist__circle--mars,
-  .navlist__circle--jupiter,
-  .navlist__circle--saturn,
-  .navlist__circle--uranus,
-  .navlist__circle--neptune {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-  }
-
-  .navlist__circle--mercury {
-    background-color: #def4fc;
-  }
-
-  .navlist__circle--venus {
-    background-color: #f7cc7f;
-  }
-
-  .navlist__circle--earth {
-    background-color: #545bfe;
-  }
-
-  .navlist__circle--mars {
-    background-color: #ff6a45;
-  }
-
-  .navlist__circle--jupiter {
-    background-color: #ecad7a;
-  }
-
-  .navlist__circle--saturn {
-    background-color: #fccb6b;
-  }
-
-  .navlist__circle--uranus {
-    background-color: #65f0d5;
-  }
-
-  .navlist__circle--neptune {
-    background-color: #497efa;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  /* Agrega estilos específicos para pantallas de hasta 400px si es necesario */
-}
-
-@media only screen and (min-width: 992px) {
-  /* Agrega estilos específicos para pantallas de 992px y superiores si es necesario */
-}
-
-@media only screen and (min-width: 1200px) {
-  /* Agrega estilos específicos para pantallas de 1200px y superiores si es necesario */
 }

@@ -9,14 +9,13 @@
 
 .planet {
   display: flex;
-  
+
   align-items: center;
   justify-content: space-between;
   margin-top: 137px;
   margin-bottom: 87px;
   max-width: 1110px;
   width: 100%;
-
 }
 
 .planet__container--img {
@@ -26,8 +25,6 @@
   width: 100%;
   margin-bottom: 30px;
 }
-
-
 
 .planet__img-geology-earth {
   width: 163px;
@@ -98,7 +95,6 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  
 }
 .planet__img-geology-venus {
   width: 163px;
@@ -108,7 +104,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  
+
   background-image: url("../assets/geology-venus.png");
 }
 
@@ -161,15 +157,14 @@
   gap: 16px;
 }
 
-
 .earth__button--internal-structure,
 .earth__button--surface-geology,
 .earth__button--overview,
-.planet__button{
+.planet__button {
   max-width: 350px;
   width: 100%;
   height: 48px;
-  flex-shrink: 0;
+
   background-color: transparent;
   cursor: pointer;
   border: 1px solid hwb(0 100% 0% / 0.2);
@@ -182,7 +177,7 @@
   letter-spacing: 2.571px;
   text-transform: uppercase;
   transition: 0.2s;
-  
+  padding: 0 1rem;
 }
 
 .earth__button--surface-geology:hover,
@@ -196,44 +191,44 @@
 .mercury__button--internal-structure:focus,
 .mercury__button--overview:focus {
   transition: 0.2s;
-  background: #1EC1A2;
+  background: #1ec1a2;
 }
 
 .venus__button--surface-geology:focus,
 .venus__button--internal-structure:focus,
 .venus__button--overview:focus {
   transition: 0.2s;
-  background: #EDA249;
+  background: #eda249;
 }
 .mars__button--surface-geology:focus,
 .mars__button--internal-structure:focus,
 .mars__button--overview:focus {
   transition: 0.2s;
-  background: #D14C32;
+  background: #d14c32;
 }
 .jupiter__button--surface-geology:focus,
 .jupiter__button--internal-structure:focus,
 .jupiter__button--overview:focus {
   transition: 0.2s;
-  background: #D83A34;
+  background: #d83a34;
 }
 .saturn__button--surface-geology:focus,
 .saturn__button--internal-structure:focus,
 .saturn__button--overview:focus {
   transition: 0.2s;
-  background: #CD5120;
+  background: #cd5120;
 }
 .uranus__button--surface-geology:focus,
 .uranus__button--internal-structure:focus,
 .uranus__button--overview:focus {
   transition: 0.2s;
-  background: #1EC1A2;
+  background: #1ec1a2;
 }
 .neptune__button--surface-geology:focus,
 .neptune__button--internal-structure:focus,
 .neptune__button--overview:focus {
   transition: 0.2s;
-  background: #2D68F0;
+  background: #2d68f0;
 }
 .earth__button--surface-geology:focus,
 .earth__button--internal-structure:focus,
@@ -241,8 +236,6 @@
   transition: 0.2s;
   background: #6d2ed5;
 }
-
-
 
 .planet__button-number {
   opacity: 0.5;
@@ -310,11 +303,11 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1045px) {
-  .planet{
+  .planet {
     display: flex;
     flex-wrap: wrap;
   }
-  .planet__info{
+  .planet__info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -332,32 +325,56 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  .planet__container{
+  .planet__container {
     padding: 1rem;
   }
-  .planet{
+  .planet {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .planet__info{
+  .planet__info {
     display: flex;
     align-items: center;
     justify-content: center;
-   gap: 69px;
+    gap: 69px;
     margin: 0 auto;
     flex-wrap: wrap;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (max-width: 600px) {
+  .planet__buttons-container {
+    position: absolute;
+    top: 84px;
+    display: flex;
+    width: 100%;
+    background-color: aqua;
+    flex-direction: row;
+    transition: 0.3s;
+
+  }
+  .planet__button {
+    transition: 0.3s;
+    color: #fff;
+    text-align: center;
+    font-family: Spartan;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.929px;
+    text-transform: uppercase;
+    border: none;
+    max-width: 80px;
+    width: 100%;
+    background-color: red;
+  }
+}
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
-
-
+@media only screen and (min-width: 1200px) {
+}
 
 /* Menu Hamburguesa  */
-
-
