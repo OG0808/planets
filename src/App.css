@@ -7,7 +7,7 @@
 .main__cotainer{
   max-width: 1440px;
   width: 100%;
-  background: url("./assets/background-stars.svg");
+  background: url("./background-stars.svg");
   min-height: 100vh;
   margin: 0 auto;
   background-color: #070724;
