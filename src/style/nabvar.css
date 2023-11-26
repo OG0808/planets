@@ -107,10 +107,10 @@
     position: absolute;
     top: 84px;
     right: 0;
-    bottom: 0;
+    bottom: 100vh;
     transition: 0.3s;
-   min-height: 100%;
-   z-index: 3;
+
+    z-index: 3;
   }
 
   .nav__menu--closed {

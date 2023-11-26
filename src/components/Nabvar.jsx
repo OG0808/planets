@@ -35,7 +35,7 @@ const Nabvar = () => {
               </div>
               <img
                 className="chevron"
-                src="./public/icon-chevron.svg"
+                src="./icon-chevron.svg"
                 alt=""
               />
             </li>

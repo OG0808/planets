@@ -39,12 +39,12 @@ const Planets = () => {
     <div className="planet__container">
       <section className="planet">
         <div className="planet__container--img">
-          {/* <img  className={
+          <div  className={
               images === "geology"
                 ? `planet__img-geology-${planetName.toLocaleLowerCase()}`
                 : ""  
             }
-            src={planet.images?.[images === "geology" ? "geology" : ""]}/> */}
+            src={planet.images?.[images === "geology" ? "geology" : ""]}></div>
           <img
             // className={
             //   images === "geology"
@@ -84,7 +84,7 @@ const Planets = () => {
               }}
               className={`${planetName.toLocaleLowerCase()}__button--overview  planet__button`}
             >
-              <span className="planet__button-number">01 </span>
+              <span className="planet__button-number">{ window.innerWidth < 601 ? "": "01" } </span>
               {overview}
             </button>
             <button
@@ -94,7 +94,7 @@ const Planets = () => {
               }}
               className={`${planetName.toLocaleLowerCase()}__button--overview  planet__button`}
             >
-              <span className="planet__button-number">02 </span>
+              <span className="planet__button-number">{ window.innerWidth < 601 ? "": "02" } </span>
               {structur}
             </button>
             <button
@@ -104,7 +104,7 @@ const Planets = () => {
               }}
               className={`${planetName.toLocaleLowerCase()}__button--overview  planet__button`}
             >
-              <span className="planet__button-number">03 </span>
+              <span className="planet__button-number">{ window.innerWidth < 601 ? "": "03" } </span>
              {golog}
             </button>
           </div>

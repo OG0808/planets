@@ -24,73 +24,76 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .planet__img-geology-earth {
   width: 163px;
-  flex-shrink: 0;
-  bottom: -45%;
+  height: 199px;
+  bottom: -15%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: url("../assets/geology-earth.png");
+  background-image: url("./geology-earth.png");
 }
 .planet__img-geology-jupiter {
   width: 163px;
-  flex-shrink: 0;
-  bottom: -35%;
+  height: 199px;
+  bottom: 5%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: url("../assets/geology-jupiter.png");
+  background-image: url("./geology-jupiter.png");
 }
 .planet__img-geology-mars {
   width: 163px;
-  flex-shrink: 0;
-  bottom: -40%;
+  height: 199px;
+  bottom: -20%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: url("../assets/geology-mars.png");
+  background-image: url("./geology-mars.png");
 }
 .planet__img-geology-mercury {
   width: 163px;
-  flex-shrink: 0;
-  bottom: -40%;
+  height: 199px;
+  bottom: -25%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: url("../assets/geology-mercury.png");
+  background-image: url("./geology-mercury.png");
 }
 .planet__img-geology-neptune {
   width: 163px;
-  flex-shrink: 0;
-  bottom: -10%;
+  height: 199px;
+  bottom: -20%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: url("../assets/geology-neptune.png");
+  background-image: url("./geology-neptune.png");
 }
 .planet__img-geology-saturn {
   width: 163px;
+  height: 199px;
   flex-shrink: 0;
-  bottom: -45%;
+  bottom: 10%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-image: url("../assets/geology-saturn.png");
+  background-image: url("./geology-saturn.png");
 }
 .planet__img-geology-uranus {
-  background-image: url("../assets/geology-uranus.png");
+  background-image: url("./geology-uranus.png");
   width: 163px;
+  height: 199px;
   flex-shrink: 0;
-  bottom: -40%;
+  bottom: -20%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -98,14 +101,15 @@
 }
 .planet__img-geology-venus {
   width: 163px;
+  height: 199px;
   flex-shrink: 0;
-  bottom: -45%;
+  bottom: -20%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
 
-  background-image: url("../assets/geology-venus.png");
+  background-image: url("./geology-venus.png");
 }
 
 .planet__info-title {
@@ -348,16 +352,16 @@
     position: absolute;
     top: 84px;
     display: flex;
-    width: 100%;
-    background-color: aqua;
+
+    flex-wrap: wrap;
     flex-direction: row;
     transition: 0.3s;
-
+    justify-content:space-around;
+   
   }
   .planet__button {
     transition: 0.3s;
-    color: #fff;
-    text-align: center;
+    
     font-family: Spartan;
     font-size: 9px;
     font-style: normal;
@@ -366,11 +370,200 @@
     letter-spacing: 1.929px;
     text-transform: uppercase;
     border: none;
-    max-width: 80px;
+   max-width: 80px;
     width: 100%;
-    background-color: red;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
   }
+
+
+.earth__button--surface-geology:hover,
+.earth__button--overview:hover,
+.earth__button--internal-structure:hover,
+.planet__button:hover {
+  transition: 0.2s;
+  background: none;
 }
+
+.mercury__button--surface-geology,
+.mercury__button--internal-structure,
+.mercury__button--overview,
+.venus__button--surface-geology,
+.venus__button--internal-structure,
+.venus__button--overview,
+.mars__button--surface-geology,
+.mars__button--internal-structure,
+.mars__button--overview,
+.jupiter__button--surface-geology,
+.jupiter__button--internal-structure,
+.jupiter__button--overview,
+.saturn__button--surface-geology,
+.saturn__button--internal-structure,
+.saturn__button--overview,
+.uranus__button--surface-geology,
+.uranus__button--internal-structure,
+.uranus__button--overview,
+.neptune__button--surface-geology,
+.neptune__button--internal-structure,
+.neptune__button--overview,
+.earth__button--surface-geology,
+.earth__button--internal-structure,
+.earth__button--overview,
+.mercury__button--surface-geology,
+.mercury__button--internal-structure,
+.mercury__button--overview {
+  position: relative;
+  overflow: hidden;
+}
+
+.mercury__button--surface-geology::after,
+.mercury__button--internal-structure::after,
+.mercury__button--overview::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #1ec1a2;
+  transition: width 0.2s ease-in-out;
+}
+
+.venus__button--surface-geology:focus::after,
+.venus__button--internal-structure:focus::after,
+.venus__button--overview:focus::after,
+.mars__button--surface-geology:focus::after,
+.mars__button--internal-structure:focus::after,
+.mars__button--overview:focus::after,
+.jupiter__button--surface-geology:focus::after,
+.jupiter__button--internal-structure:focus::after,
+.jupiter__button--overview:focus::after,
+.saturn__button--surface-geology:focus::after,
+.saturn__button--internal-structure:focus::after,
+.saturn__button--overview:focus::after,
+.uranus__button--surface-geology:focus::after,
+.uranus__button--internal-structure:focus::after,
+.uranus__button--overview:focus::after,
+.neptune__button--surface-geology:focus::after,
+.neptune__button--internal-structure:focus::after,
+.neptune__button--overview:focus::after,
+.earth__button--surface-geology:focus::after,
+.earth__button--internal-structure:focus::after,
+.earth__button--overview:focus::after,
+.mercury__button--surface-geology:focus::after,
+.mercury__button--internal-structure:focus::after,
+.mercury__button--overview:focus::after {
+  width: 100%;
+}
+
+
+.venus__button--surface-geology::after,
+.venus__button--internal-structure::after,
+.venus__button--overview::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+transition: width 0.2s ease-in-out;
+  transition: 0.2s;
+  border-bottom:3px #eda249 solid;
+}
+.mars__button--surface-geology::after,
+.mars__button--internal-structure::after,
+.mars__button--overview::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+transition: width 0.2s ease-in-out;
+  transition: 0.2s;
+  border-bottom:3px #d14c32 solid;
+}
+.jupiter__button--surface-geology::after,
+.jupiter__button--internal-structure::after,
+.jupiter__button--overview::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+transition: width 0.2s ease-in-out;
+  transition: 0.2s;
+  border-bottom:3px #d83a34 solid;
+}
+.saturn__button--surface-geology::after,
+.saturn__button--internal-structure::after,
+.saturn__button--overview::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+transition: width 0.2s ease-in-out;
+  transition: 0.2s;
+  border-bottom:3px #cd5120 solid;
+}
+.uranus__button--surface-geology::after,
+.uranus__button--internal-structure::after,
+.uranus__button--overview::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+transition: width 0.2s ease-in-out;
+  transition: 0.2s;
+  border-bottom:3px #1ec1a2 solid;
+}
+.neptune__button--surface-geology::after,
+.neptune__button--internal-structure::after,
+.neptune__button--overview::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+transition: width 0.2s ease-in-out;
+  transition: 0.2s;
+  border-bottom:3px  #2d68f0 solid;
+}
+.earth__button--surface-geology::after,
+.earth__button--internal-structure::after,
+.earth__button--overview::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+transition: width 0.2s ease-in-out;
+ border-bottom:3px #6d2ed5 solid;
+} 
+
+
+
+}
+
+
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
