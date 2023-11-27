@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Nabvar = () => {
   const [menu, setMenu] = useState(false);
-  console.log(menu);
+ 
   const hanldeMenu = () => {
     setMenu(!menu);
   };
@@ -20,9 +20,7 @@ const Nabvar = () => {
           className="nabvar__icon--hamburguesa"
           src="./icon-hamburger.svg"
           alt=""
-          data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasNavbar"
-                    aria-controls="offcanvasNavbar"
+      
         />
         <nav className={menu ? "nav__menu--open" : "nav__menu--closed"}>
           <ul className="nabvarlist__planets">
