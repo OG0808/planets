@@ -30,7 +30,7 @@
 .planet__img-geology-earth {
   width: 163px;
   height: 199px;
-  bottom: -15%;
+  bottom: -9%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -50,7 +50,7 @@
 .planet__img-geology-mars {
   width: 163px;
   height: 199px;
-  bottom: -20%;
+  bottom: -10%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -60,7 +60,7 @@
 .planet__img-geology-mercury {
   width: 163px;
   height: 199px;
-  bottom: -25%;
+  bottom: -10%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -70,7 +70,7 @@
 .planet__img-geology-neptune {
   width: 163px;
   height: 199px;
-  bottom: -20%;
+  bottom: -10%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -81,7 +81,7 @@
   width: 163px;
   height: 199px;
   flex-shrink: 0;
-  bottom: 10%;
+  bottom: 0%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -93,7 +93,7 @@
   width: 163px;
   height: 199px;
   flex-shrink: 0;
-  bottom: -20%;
+  bottom: -10%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -103,7 +103,7 @@
   width: 163px;
   height: 199px;
   flex-shrink: 0;
-  bottom: -20%;
+  bottom: -10%;
   position: absolute;
   background-repeat: no-repeat;
   background-position: bottom;
